@@ -52,6 +52,7 @@ export default {
 
     for (let user of this.users) {
       try {
+        user.message = "";
         if (flag) {
           axios.get(url).then(response => {
             //console.log(response.data.value);
